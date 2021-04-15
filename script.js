@@ -1,14 +1,14 @@
-var diff = 4;
+var difficulty = 0;
 var startTimer = false;
 
 function changeDifficultyOn4() {
-  diff = 4;
+  difficulty = 4;
 }
 function changeDifficultyOn6() {
-  diff = 6;
+  difficulty = 6;
 }
 function changeDifficultyOn8() {
-  diff = 8;
+  difficulty = 8;
 }
 
 /**                game starting difficulty and name settings                 */
@@ -16,20 +16,20 @@ function changeDifficultyOn8() {
 function startGame() {
   var playerName = document.getElementById("userName").value;
   localStorage["plName"] = playerName;
-
+  localStorage["gameDiff"] = difficulty;
   console.log(playerName);
 
   if (playerName == "" || playerName[0] == " ") {
     alert("Input name starts with a-z letter");
   } else {
-    if (diff != 0) {
+    if (difficulty != 0) {
       window.location.href = "game.html";
     } else {
       alert("choose difficulty");
     }
   }
 }
-
+var diff = localStorage["gameDiff"];
 var player = document.getElementById("player");
 
 player.innerHTML = localStorage["plName"];
@@ -37,10 +37,10 @@ player.innerHTML = localStorage["plName"];
 /**                              size                             */
 
 if (diff == 4) {
-  document.getElementById("gameField").style.maxWidth = "500px";
+  document.getElementById("gameField").style.maxWidth = "60vmin";
 }
 if (diff == 6) {
-  document.getElementById("gameField").style.maxWidth = "1020px";
+  document.getElementById("gameField").style.maxWidth = "90vmin";
 }
 /**                                        random array generation                    */
 

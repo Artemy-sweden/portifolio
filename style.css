@@ -13,7 +13,7 @@
 h1.title {
   margin-top: 8.32vw;
   color: #000000;
-  font-size: 2.8vw;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
 }
@@ -21,7 +21,7 @@ h1.title {
 p.subtitle {
   margin-top: 1.4vw;
   margin-bottom: 5.6vw;
-  font-size: 1.1vw;
+  font-size: 16px;
   color: #777777;
   text-align: center;
 }
@@ -65,7 +65,8 @@ p.subtitle {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 2.77vw;
+  font-size: 40px;
+  font-weight: normal;
 }
 
 .h1 {
@@ -73,7 +74,7 @@ p.subtitle {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 5.2vw;
+  font-size: 75px;
 }
 
 .more-info {
@@ -86,7 +87,7 @@ p.subtitle {
   width: 16.6vw;
   height: 4.5vw;
   text-transform: uppercase;
-  font-size: 1.25vw;
+  font-size: 18px;
   font-weight: bold;
   color: #484543;
   text-decoration: none;
@@ -123,14 +124,14 @@ p.subtitle {
   text-align: center;
   color: #000000;
   font-weight: bold;
-  font-size: 1.3vw;
+  font-size: 18px;
 }
 .service__desc {
   margin-top: 1.4vw;
   margin-bottom: 8.32vw;
   text-align: center;
   color: #777777;
-  font-size: 1vw;
+  font-size: 14px;
 }
 
 /*? *************************************  3rd ****************************************/
@@ -172,7 +173,7 @@ p.subtitle {
   float: right;
 }
 .aboutus-par {
-  font-size: 1.3vw;
+  font-size: 18px;
   font-weight: bold;
   color: #000000;
 }
@@ -206,4 +207,163 @@ p.subtitle {
 
 ::-webkit-scrollbar-thumb {
   background: #000;
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    max-width: 75%;
+  }
+  .h1 {
+    font-size: 5.2vw;
+  }
+  .h4 {
+    font-size: 2.8vw;
+  }
+  .more-info {
+    font-size: 1.25vw;
+  }
+  .nav__link {
+    font-size: 1vw;
+  }
+  .nav__links {
+    width: 33.7vw;
+  }
+  .logo img {
+    width: 5.5vw;
+  }
+  h1.title {
+    font-size: 2.8vw;
+  }
+  p.subtitle {
+    font-size: 1.1vw;
+  }
+  .service__name {
+    font-size: 1.25vw;
+  }
+  .service__desc {
+    font-size: 1vw;
+  }
+  .aboutus-par {
+    font-size: 1.25vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .h1 {
+    font-size: 50px;
+    padding-bottom: 4vw;
+  }
+  .h4 {
+    font-size: 30px;
+  }
+  .more-info {
+    font-size: 14px;
+  }
+  h1.title {
+    font-size: 30px;
+  }
+  .service__desc {
+    margin-bottom: 0;
+  }
+  .footer-info {
+    font-size: 10px;
+  }
+  .more-info {
+    display: none;
+  }
+  .section__first {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .nav__link {
+    font-size: 10px;
+  }
+  .h1 {
+    font-size: 40px;
+  }
+  .h4 {
+    margin-top: 8vw;
+    font-size: 25px;
+  }
+
+  h1.title {
+    font-size: 25px;
+  }
+  p.subtitle {
+    font-size: 12px;
+  }
+  .service {
+    width: 28vw;
+  }
+  .service__name {
+    font-size: 14px;
+  }
+  .service__desc {
+    font-size: 12px;
+  }
+  .aboutus-par {
+    font-size: 14px;
+  }
+  .aboutus-right,
+  .aboutus-left {
+    width: 50%;
+    justify-content: space-around;
+  }
+  .text-section {
+    width: 25vw;
+  }
+}
+@media (max-width: 500px) {
+  .h1 {
+    font-size: 25px;
+  }
+  .h4 {
+    font-size: 18px;
+  }
+  h1.title {
+    font-size: 20px;
+  }
+  p.subtitle {
+    font-size: 10px;
+  }
+  .aboutus-right,
+  .aboutus-left {
+    width: 80%;
+  }
+  .text-section {
+    width: 75%;
+  }
+}
+@media (max-width: 425px) {
+  .section__first {
+    z-index: 20;
+    position: sticky;
+    top: 0;
+  }
+  .h1 {
+    display: none;
+  }
+  .h4 {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .header {
+    padding: 2px;
+  }
+  .service {
+    width: 80%;
+  }
+  .nav__links {
+    width: 100vw;
+  }
+  h1.title {
+    font-size: 18px;
+  }
 }
